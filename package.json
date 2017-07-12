@@ -1,8 +1,8 @@
 {
-  "name": "Starter Kit",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Starter Kit",
+  "name": "starterkit-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "6.7.x",
@@ -42,5 +42,7 @@
   "dependencies": {
     "del": "^3.0.0",
     "normalize.less": "^1.0.0"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }

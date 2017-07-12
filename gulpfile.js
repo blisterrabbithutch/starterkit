@@ -37,7 +37,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("style", function() {
-    gulp.src("less/style.sass")
+    gulp.src("less/style.less")
         .pipe(plumber())
         .pipe(less(
             mqpacker({
@@ -88,7 +88,7 @@ gulp.task("serve", function() {
         done();
     });
 
-    gulp.watch("less/**/*.sass", ["style"]);
+    gulp.watch("less/**/*.less", ["style"]);
     gulp.watch("img/*.svg").on("change", server.reload);
     gulp.watch("*.html", ["html:update"]);
 });
