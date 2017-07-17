@@ -1,0 +1,115 @@
+.main-header {
+	min-height: 70px;
+	&__wrapper {
+		.container();
+	}
+	
+	&__logo {
+		display: inline-block;
+	}
+
+	&__logo p {
+		margin-top:13px;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 16px;
+		letter-spacing: 2px;
+		padding-left: 10px;
+		font-weight: normal;
+	}
+
+	&__logo-image {
+		padding-top:7px;
+	}
+}
+
+.main-header__contacts {
+	padding-top: 10px;
+	width: 365px;
+	float: right;
+	text-align: right;
+	&-number {
+		display: inline-block;
+		font-size: 16px;
+		font-weight: normal;
+		margin-right: 25px;
+	}
+	&-callback-button {
+		background:none;
+		font-weight: normal;
+		color: #83cbf6;
+		width: 165px;
+		border:2px solid #83cbf6;
+		border-radius: 24px;
+	}
+}
+
+.main-header__form-wrapper {
+	background-color: #606684;
+	height: 120px;
+	text-align: center;
+}
+
+.main-header__form {
+	.container();
+	padding-top: 38px;
+	position: relative;
+	&-name-field {
+		display: inline-block;
+		margin-right: 30px;
+	}
+	&-number-field {
+		display: inline-block;
+		margin-right: 30px;
+	}
+	& button {
+		display: inline-block;
+	}
+	&-submit-button {
+		width: 164px;
+		height: 40px;
+		color: @white;
+		background-color: #454a60;
+		border:none;
+	}
+
+	&-wrapper-close {
+		position: absolute;
+		top: 42px;
+		right:30px;
+		height: 33px;
+		width: 33px;
+		background: none;
+		border:none;
+		background-image: url("../img/cross.png");
+	}
+
+	input {
+		background-color: #606684;
+		border: 1px solid white;
+		color: white;
+		width: 260px;
+		padding: 10px 10px;
+		box-sizing: border-box;
+		&::-webkit-input-placeholder {
+    		font-family: "Open Sans", "Arial", sans-serif;
+    		font-size: 14px;
+    		color: #fff;
+    		line-height: 30px;
+		}
+		&:-ms-input-placeholder {
+    		line-height: 30px;
+    		font-family: "Open Sans", "Arial", sans-serif;
+    		font-size: 14px;
+    		color: #fff;
+    		line-height: 30px;
+		}
+		&::-moz-placeholder {
+    		line-height: 30px;
+    		font-size: 14px;
+    		color: #fff;
+    		line-height: 30px;
+    		font-family: "Open Sans", "Arial", sans-serif;
+		}
+	}
+}

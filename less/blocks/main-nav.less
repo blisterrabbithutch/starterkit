@@ -1,0 +1,33 @@
+.main-nav {
+	background-color: #e5eef7;
+	min-height: 50px;
+
+	a {
+		display: inline-block;
+		height: 50px;
+	}
+
+	ul {
+		margin:0;
+		.container();
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		/*margin-left: 40px;*/
+		display: inline-block;
+		a {
+			box-sizing: border-box;
+			padding-top: 10px;
+			padding-left: 40px;
+			padding-right: 40px;
+			color: @black;
+			font-weight: normal;
+			text-decoration: none;
+		}
+	}
+	&-link--active {
+		background-color: #d1e6f7;
+	}
+}

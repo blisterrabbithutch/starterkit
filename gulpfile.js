@@ -89,6 +89,7 @@ gulp.task("serve", function() {
     });
 
     gulp.watch("less/**/*.less", ["style"]);
+    gulp.watch("less/blocks/*.less", ["style"]);
     gulp.watch("img/*.svg").on("change", server.reload);
     gulp.watch("*.html", ["html:update"]);
 });

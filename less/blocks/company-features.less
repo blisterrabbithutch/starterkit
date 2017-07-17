@@ -1,0 +1,58 @@
+.company-features {
+	min-height: 660px;
+	.container();
+	&__experience {
+		padding-top: 85px;
+		margin-left: 190px;
+		min-height: 190px;
+		width: 360px;
+		float: left;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			top: 54px;
+    		right: -420px;
+    		width: 295px;
+    		height: 245px;
+			background: url("../img/icon-experience.png");
+		}
+		&-title {
+			font-weight: lighter;
+			color: #0698ed;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		&-description {
+			/*width: 360px;*/
+			/*float: left;*/
+		}
+	}
+	&__license {
+		min-height: 190px;
+		padding-top: 405px;
+		margin-right: 125px;
+		width: 360px;
+		float: right;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			top: 355px;
+    		right: 556px;
+    		width: 277px;
+    		height: 280px;
+			background: url("../img/icon-license.png");
+		}
+		&-title {
+			font-weight: lighter;
+			color: #0698ed;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		&-description {
+			/*width: 360px;*/
+			/*float: right;*/
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.company-program-quality {
+	min-height: 455px;
+	text-align: center;
+	font-size: 18px;
+	&__item {
+		padding-top: 200px;
+		display: inline-block;
+		vertical-align: top;
+		&-title {
+			color: #0698ed;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		&--teachers {
+			width: 330px;
+			text-align: left;
+			position: relative;
+			margin-right: 130px;
+			&:after {
+				position:absolute;
+				content: "";
+				top: 130px;
+				left: 0px;
+				height: 80px;
+				width: 84px;
+				background: url("../img/icon-teaching-staff.png");
+			}
+		}
+		&--program {
+			width: 370px;
+			text-align: left;
+			position: relative;
+			&:after {
+				position:absolute;
+				content: "";
+				top: 130px;
+    			left: 0px;
+    			height: 69px;
+    			width: 85px;
+				background: url("../img/icon-program.png");
+			}
+		}
+	}
+}
