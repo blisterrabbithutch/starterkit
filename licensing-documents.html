@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ЮЖУРАЛРЭСЦЕНТР</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="main-header__wrapper">
-			<a href="#" class="main-header__logo">
+			<a href="index.html" class="main-header__logo">
 				<img src="img/logo.png" alt="Логотип" class="main-header__logo-image">
 				<p>ЮЖУРАЛРЭСЦЕНТР</p>
 			</a>
@@ -17,12 +17,12 @@
 				<div class="main-header__contacts-number">
 					+7 (351) 248 38 24
 				</div>
-				<button class="main-header__contacts-callback-button">
+				<button class="main-header__contacts-callback-button js-header-form-button">
 					Заказать звонок
 				</button><!-- main-header-contacts-callback-button -->
 			</div><!-- main-header-contacts -->
 		</div>
-		<div class="main-header__form-wrapper">
+		<div id="form" class="main-header__form-wrapper main-header__form-wrapper--closed  js-main-header-form">
 			<form action="#" method="post" class="main-header__form">
 				<div class="main-header__form-name-field">
 					<input type="text" placeholder="Ваше имя" id="username" required name="username">
@@ -31,82 +31,92 @@
 					<input type="tel" placeholder="Ваш телефон" id="number" required name="number">
 				</div><!-- main-header__form-number-field -->
 				<button class="main-header__form-submit-button" type="submit">Отправить</button>
-				<button class="main-header__form-wrapper-close"></button>
+				<button class="main-header__form-wrapper-close js-form-close"></button>
 			</form>
 		</div><!-- main-header__form-wrapper -->
 		<nav class="main-nav">
 			<ul>
-				<li><a href="#" class="main-nav-link">Сопроводительные документы</a></li>
-				<li><a href="#" class="main-nav-link main-nav-link--active">Разрешительные документы</a></li>
+				<li><a href="accompanying-documents.html" class="main-nav-link">Сопроводительные документы</a></li>
+				<li><a class="main-nav-link main-nav-link--active">Разрешительные документы</a></li>
 				<li><a href="#" class="main-nav-link">Тех. задание на соответствие 44-ФЗ</a></li>
-				<li><a href="#" class="main-nav-link">Контакты</a></li>
+				<li><a href="contacts.html" class="main-nav-link">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<section class="licensing-documents">
 
-	<section class="licensing-documents">
-		
-		<h1 class="licensing-documents__title">
-			Разрешительные документы и лицензии
-		</h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 licensing-documents__item">
-					<button class="licensing-documents__item-preview-photo"></button>
-					<div class="licensing-documents__item-title">Лицензия</div>
+			<h1 class="licensing-documents__title">
+				Разрешительные документы и лицензии
+			</h1>
+			<div class="licensing-documents__item">
+				<a class="licensing-documents__item-preview-photo" data-fancybox="gallery" href="img/license-1.png">
+					<img src="img/license-1.png" alt="">
+				</a>
+				<div class="licensing-documents__item-description">
+					<div class="licensing-documents__item-description-title">Лицензия</div>
 					<p>На право осуществления образовательной деятельности</p>
-					<button class="licensing-documents__item-zoom-button">Смотреть</button>
+					<a  data-fancybox="gallery" href="img/license-1.png" class="licensing-documents__item-description-zoom-button">Смотреть</a>
 				</div>
-				<div class="col-lg-5 licensing-documents__item">
-					<button class="licensing-documents__item-preview-photo"></button>
-					<div class="licensing-documents__item-title">Свидетельство</div>
+			</div>
+			<div class="licensing-documents__item">
+				<a data-fancybox="gallery" href="img/license-2.png" class="licensing-documents__item-preview-photo">
+					<img src="img/license-2.png" alt="">
+				</a>
+				<div class="licensing-documents__item-description">
+					<div class="licensing-documents__item-description-title">Свидетельство</div>
 					<p>О внесении записи в Единый государственный реестр</p>
-					<button class="licensing-documents__item-zoom-button">Смотреть</button>
+					<a  data-fancybox="gallery" href="img/license-2.png" class="licensing-documents__item-description-zoom-button">Смотреть</a>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-5 licensing-documents__item">
-					<button class="licensing-documents__item-preview-photo"></button>
-					<div class="licensing-documents__item-title">Свидетельство</div>
+			<div class="licensing-documents__item">
+				<a data-fancybox="gallery" href="img/license-3.png" class="licensing-documents__item-preview-photo">
+					<img src="img/license-3.png" alt="">
+				</a>
+				<div class="licensing-documents__item-description">
+					<div class="licensing-documents__item-description-title">Свидетельство</div>
 					<p>На право осуществления образовательной деятельности</p>
-					<button class="licensing-documents__item-zoom-button">Смотреть</button>
-				</div>
-				<div class="col-lg-5 licensing-documents__item">
-					<button class="licensing-documents__item-preview-photo"></button>
-					<div class="licensing-documents__item-title">Свидетельство</div>
-					<p>О государственной регистрации некоммерческой организации</p>
-					<button class="licensing-documents__item-zoom-button">Смотреть</button>
+					<a  data-fancybox="gallery" href="img/license-3.png" class="licensing-documents__item-description-zoom-button">Смотреть</a>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-5 licensing-documents__item">
-					<button class="licensing-documents__item-preview-photo"></button>
-					<div class="licensing-documents__item-title">Свидетельство</div>
+			<div class="licensing-documents__item">
+				<a data-fancybox="gallery" href="img/license-4.png" class="licensing-documents__item-preview-photo">
+					<img src="img/license-4.png" alt="">
+				</a>
+				<div class="licensing-documents__item-description">
+					<div class="licensing-documents__item-description-title">Свидетельство</div>
+					<p>О государственной регистрации некоммерческой организации</p>
+					<a  data-fancybox="gallery" href="img/license-4.png" class="licensing-documents__item-description-zoom-button">Смотреть</a>
+				</div>
+			</div>
+			<div class="licensing-documents__item">
+				<a data-fancybox="gallery" href="img/license-5.png" class="licensing-documents__item-preview-photo">
+					<img src="img/license-5.png" alt="">
+				</a>
+				<div class="licensing-documents__item-description">
+					<div class="licensing-documents__item-description-title">Свидетельство</div>
 					<p>О государственной аккредитации</p>
-					<button class="licensing-documents__item-zoom-button">Смотреть</button>
-				</div>
-				<div class="col-lg-5 licensing-documents__item">
-					<button class="licensing-documents__item-preview-photo"></button>
-					<div class="licensing-documents__item-title">Свидетельство</div>
-					<p>О государственной регистрации некоммерческой организации</p>
-					<button class="licensing-documents__item-zoom-button">Смотреть</button>
-				</div>
-			</div><!-- row -->
-			<div class="row">
-				<div class="col-lg-5 licensing-documents__item-button">
-					Зарегистрирован Министерством<br> 
-					юстиции Российской Федерации
-				</div>
-				<div class="col-lg-5 licensing-documents__item-button">		Письмо Министерства юстиции<br> 
-					Российской Федерации
+					<a  data-fancybox="gallery" href="img/license-5.png" class="licensing-documents__item-description-zoom-button">Смотреть</a>
 				</div>
 			</div>
-		</div><!-- container -->
-		
-	</section>
-	
-
+			<div class="licensing-documents__item">
+				<a data-fancybox="gallery" href="img/license-6.png" class="licensing-documents__item-preview-photo">
+					<img src="img/license-6.png" alt="">
+				</a>
+				<div class="licensing-documents__item-description">
+					<div class="licensing-documents__item-description-title">Свидетельство</div>
+					<p>О государственной регистрации некоммерческой организации</p>
+					<a  data-fancybox="gallery" href="img/license-6.png" class="licensing-documents__item-description-zoom-button">Смотреть</a>
+				</div>
+			</div>
+			<a class="licensing-documents__item-button">
+				Зарегистрирован Министерством<br> 
+				юстиции Российской Федерации
+			</a>
+			<a class="licensing-documents__item-button">Письмо Министерства юстиции<br> 
+				Российской Федерации
+			</a>
+		</section>
 	</main>
 	<footer class="main-footer">
 		<div class="main-footer__wrapper">
@@ -120,10 +130,10 @@
 			<div class="main-footer__contacts">
 				<div class="main-footer__contacts-title">Контакты</div>
 				<div class="main-footer__contacts-number">+7 (351) 248 38 24</div>
-				<button class="main-footer__contacts-button">Заказать звонок</button>
+				<a href="#form" class="main-footer__contacts-button">Заказать звонок</a>
 			</div><!-- main-footer__contacts -->
 			<div class="main-footer__company-info">
-				<div class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</div>
+				<a href="index.html" class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</a>
 				<div class="main-footer__company-info-name-copyright">© АНО "ЮЖУРАЛРЭСЦЕНТР"</div>
 				<div class="main-footer__company-info-developed">
 					<a href="#">made in PASEKA</a>
@@ -131,5 +141,8 @@
 			</div><!-- main-footer__company-info -->
 		</div>
 	</footer>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

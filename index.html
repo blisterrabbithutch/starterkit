@@ -16,12 +16,12 @@
 				<div class="main-header__contacts-number">
 					+7 (351) 248 38 24
 				</div>
-				<button class="main-header__contacts-callback-button">
+				<button class="main-header__contacts-callback-button js-header-form-button">
 					Заказать звонок
 				</button><!-- main-header-contacts-callback-button -->
 			</div><!-- main-header-contacts -->
 		</div>
-		<div class="main-header__form-wrapper">
+		<div id="form" class="main-header__form-wrapper main-header__form-wrapper--closed  js-main-header-form">
 			<form action="#" method="post" class="main-header__form">
 				<div class="main-header__form-name-field">
 					<input type="text" placeholder="Ваше имя" id="username" required name="username">
@@ -30,15 +30,15 @@
 					<input type="tel" placeholder="Ваш телефон" id="number" required name="number">
 				</div><!-- main-header__form-number-field -->
 				<button class="main-header__form-submit-button" type="submit">Отправить</button>
-				<button class="main-header__form-wrapper-close"></button>
+				<button class="main-header__form-wrapper-close js-form-close"></button>
 			</form>
 		</div><!-- main-header__form-wrapper -->
 		<nav class="main-nav">
 			<ul>
-				<li><a href="#">Сопроводительные документы</a></li>
-				<li><a href="#">Разрешительные документы</a></li>
+				<li><a href="accompanying-documents.html">Сопроводительные документы</a></li>
+				<li><a href="licensing-documents.html">Разрешительные документы</a></li>
 				<li><a href="#">Тех. задание на соответствие 44-ФЗ</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -168,10 +168,10 @@
 			<div class="main-footer__contacts">
 				<div class="main-footer__contacts-title">Контакты</div>
 				<div class="main-footer__contacts-number">+7 (351) 248 38 24</div>
-				<button class="main-footer__contacts-button">Заказать звонок</button>
+				<a href="#form" class="main-footer__contacts-button">Заказать звонок</a>
 			</div><!-- main-footer__contacts -->
 			<div class="main-footer__company-info">
-				<div class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</div>
+				<a href="index.html" class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</a>
 				<div class="main-footer__company-info-name-copyright">© АНО "ЮЖУРАЛРЭСЦЕНТР"</div>
 				<div class="main-footer__company-info-developed">
 					<a href="#">made in PASEKA</a>
@@ -179,5 +179,10 @@
 			</div><!-- main-footer__company-info -->
 		</div>
 	</footer>
+	<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

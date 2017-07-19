@@ -8,7 +8,7 @@
 <body>
 	<header class="main-header">
 		<div class="main-header__wrapper">
-			<a href="#" class="main-header__logo">
+			<a href="index.html" class="main-header__logo">
 				<img src="img/logo.png" alt="Логотип" class="main-header__logo-image">
 				<p>ЮЖУРАЛРЭСЦЕНТР</p>
 			</a>
@@ -16,12 +16,12 @@
 				<div class="main-header__contacts-number">
 					+7 (351) 248 38 24
 				</div>
-				<button class="main-header__contacts-callback-button">
+				<button class="main-header__contacts-callback-button js-header-form-button">
 					Заказать звонок
 				</button><!-- main-header-contacts-callback-button -->
 			</div><!-- main-header-contacts -->
 		</div>
-		<div class="main-header__form-wrapper">
+		<div id="form" class="main-header__form-wrapper main-header__form-wrapper--closed  js-main-header-form">
 			<form action="#" method="post" class="main-header__form">
 				<div class="main-header__form-name-field">
 					<input type="text" placeholder="Ваше имя" id="username" required name="username">
@@ -30,36 +30,36 @@
 					<input type="tel" placeholder="Ваш телефон" id="number" required name="number">
 				</div><!-- main-header__form-number-field -->
 				<button class="main-header__form-submit-button" type="submit">Отправить</button>
-				<button class="main-header__form-wrapper-close"></button>
+				<button class="main-header__form-wrapper-close js-form-close"></button>
 			</form>
 		</div><!-- main-header__form-wrapper -->
 		<nav class="main-nav">
 			<ul>
-				<li><a href="#" class="main-nav-link ">Сопроводительные документы</a></li>
-				<li><a href="#" class="main-nav-link">Разрешительные документы</a></li>
+				<li><a href="accompanying-documents.html" class="main-nav-link ">Сопроводительные документы</a></li>
+				<li><a href="licensing-documents.html" class="main-nav-link">Разрешительные документы</a></li>
 				<li><a href="#" class="main-nav-link">Тех. задание на соответствие 44-ФЗ</a></li>
-				<li><a href="#" class="main-nav-link main-nav-link--active">Контакты</a></li>
+				<li><a class="main-nav-link main-nav-link--active">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-	<section class="company-contacts">
-		<h1 class="company-contacts__title">Контакты и схема проезда</h1>
-		<div class="company-contacts__description">
-			<div class="company-contacts__description-adress">
-				<h2 class="company-contacts__description-adress-title">Юридический адрес:</h2>
-				<p>454080<br>г. Челябинск, ул. Энгельса 47</p>
+		<section class="company-contacts">
+			<h1 class="company-contacts__title">Контакты и схема проезда</h1>
+			<div class="company-contacts__description">
+				<div class="company-contacts__description-adress">
+					<h2 class="company-contacts__description-adress-title">Юридический адрес:</h2>
+					<p>454080<br>г. Челябинск, ул. Энгельса 47</p>
+				</div>
+				<div class="company-contacts__description-phone">
+					<h2 class="company-contacts__description-phone-title">+7 (351) 265 27 03</h2>
+					<p>2652703@outlook.com</p>
+					<button class="company-contacts__description-phone-callback-button">Заказать звонок</button>
+				</div>
+			</div><!-- company-contacts__description -->
+			<div class="company-contacts__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.075866553688!2d61.38032108077195!3d55.16444880010859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c592c9db20eb07%3A0xf09cf429a19b2ce3!2z0YPQuy4g0K3QvdCz0LXQu9GM0YHQsCwgNDcsINCn0LXQu9GP0LHQuNC90YHQuiwg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LsuLCA0NTQwODA!5e0!3m2!1sru!2sru!4v1500288666732" width="550" height="455" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
-			<div class="company-contacts__description-phone">
-				<h2 class="company-contacts__description-phone-title">+7 (351) 265 27 03</h2>
-				<p>2652703@outlook.com</p>
-				<button class="company-contacts__description-phone-callback-button">Заказать звонок</button>
-			</div>
-		</div><!-- company-contacts__description -->
-		<div class="company-contacts__map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.075866553688!2d61.38032108077195!3d55.16444880010859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c592c9db20eb07%3A0xf09cf429a19b2ce3!2z0YPQuy4g0K3QvdCz0LXQu9GM0YHQsCwgNDcsINCn0LXQu9GP0LHQuNC90YHQuiwg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LsuLCA0NTQwODA!5e0!3m2!1sru!2sru!4v1500288666732" width="550" height="455" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-	</section>
+		</section>
 	</main>
 	<footer class="main-footer">
 		<div class="main-footer__wrapper">
@@ -73,10 +73,10 @@
 			<div class="main-footer__contacts">
 				<div class="main-footer__contacts-title">Контакты</div>
 				<div class="main-footer__contacts-number">+7 (351) 248 38 24</div>
-				<button class="main-footer__contacts-button">Заказать звонок</button>
+				<a href="#form" class="main-footer__contacts-button">Заказать звонок</a>
 			</div><!-- main-footer__contacts -->
 			<div class="main-footer__company-info">
-				<div class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</div>
+				<a href="index.html" class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</a>
 				<div class="main-footer__company-info-name-copyright">© АНО "ЮЖУРАЛРЭСЦЕНТР"</div>
 				<div class="main-footer__company-info-developed">
 					<a href="#">made in PASEKA</a>
@@ -84,5 +84,8 @@
 			</div><!-- main-footer__company-info -->
 		</div>
 	</footer>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
