@@ -227,10 +227,15 @@ img {
   /*@media @mobile-widths {
         width: 660px;
     }*/
+  position: relative;
+  /*box-shadow: 0px 5px 14px 2px rgba(0,0,0,0.07);*/
 }
 .main-header__logo {
   display: inline-block;
   text-decoration: none;
+}
+.main-header__logo:active {
+  color: #0799ee;
 }
 .main-header__logo p {
   margin-top: 13px;
@@ -259,13 +264,24 @@ img {
 .main-header__contacts-callback-button {
   background: none;
   font-weight: normal;
-  color: #83cbf6;
+  color: #0698ed;
   width: 165px;
-  border: 2px solid #83cbf6;
+  border: 1px solid #0698ed;
   border-radius: 24px;
+  transition: all 0.2s ease;
+  /*transition: 1.2s;*/
+}
+.main-header__contacts-callback-button:hover {
+  background: #0698ed;
+  color: white;
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.1);
+}
+.main-header__contacts-callback-button:focus {
+  outline: 0;
 }
 .main-header__form-wrapper {
   background-color: #606684;
+  box-shadow: inset 0 5px 20px -4px rgba(0, 0, 0, 0.4);
   height: 120px;
   text-align: center;
 }
@@ -340,10 +356,15 @@ img {
 .main-nav {
   background-color: #e5eef7;
   min-height: 50px;
+  box-shadow: 0 5px 20px -4px rgba(0, 0, 0, 0.1), inset 0 5px 20px -4px rgba(0, 0, 0, 0.1);
 }
 .main-nav a {
   display: inline-block;
   height: 50px;
+}
+.main-nav a:hover {
+  /*.transition();*/
+  border-bottom: 3px solid #d1e6f7;
 }
 .main-nav ul {
   margin: 0;
@@ -357,7 +378,8 @@ img {
   text-align: center;
 }
 .main-nav li {
-  /*margin-left: 40px;*/
+  margin-left: -2px;
+  margin-right: -2px;
   display: inline-block;
 }
 .main-nav li a {
@@ -371,6 +393,7 @@ img {
 }
 .main-nav-link--active {
   background-color: #d1e6f7;
+  box-shadow: inset 0 5px 20px -4px rgba(0, 0, 0, 0.1);
 }
 .company-title {
   border-bottom: 1px solid #ebeaea;
@@ -513,6 +536,9 @@ img {
 .company-services__directions-radiation-security-title {
   background: #ebf7fd;
   color: #0698ed;
+  box-sizing: border-box;
+  padding-top: 20px;
+  height: 65px;
   font-weight: normal;
   font-size: 18px;
   text-transform: uppercase;
@@ -548,6 +574,9 @@ img {
 .company-services__directions-radiation-control-title {
   background: #ebf7fd;
   color: #0698ed;
+  height: 65px;
+  box-sizing: border-box;
+  padding-top: 20px;
   font-weight: normal;
   font-size: 18px;
   text-transform: uppercase;
@@ -584,6 +613,9 @@ img {
 .company-services__directions-explosion-proof-title {
   background: #ebf7fd;
   color: #0698ed;
+  box-sizing: border-box;
+  padding-top: 20px;
+  height: 65px;
   font-weight: normal;
   font-size: 18px;
   text-transform: uppercase;
@@ -607,6 +639,7 @@ img {
   box-sizing: border-box;
   padding-top: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 .company-services-features {
   text-align: center;
@@ -716,7 +749,7 @@ img {
 .company-program-quality__item--teachers:after {
   position: absolute;
   content: "";
-  top: 130px;
+  top: 110px;
   left: 0px;
   height: 80px;
   width: 84px;
@@ -730,7 +763,7 @@ img {
 .company-program-quality__item--program:after {
   position: absolute;
   content: "";
-  top: 130px;
+  top: 120px;
   left: 0px;
   height: 69px;
   width: 85px;
@@ -789,7 +822,7 @@ img {
   top: -45px;
   left: 45px;
   width: 17px;
-  height: 23px;
+  height: 22px;
   background: url("../img/icon-footer-pagination.png");
 }
 .main-footer__pagination ul {
@@ -802,6 +835,11 @@ img {
 .main-footer__pagination a {
   text-decoration: none;
   color: inherit;
+}
+.main-footer__pagination a:hover {
+  transition: all 0.2s ease;
+  /*transition: 1.2s;*/
+  text-decoration: underline;
 }
 .main-footer__contacts {
   margin-left: 95px;
@@ -825,7 +863,10 @@ img {
   background: none;
   text-decoration: none;
   color: white;
-  border: 2px solid white;
+  outline: 2px solid white;
+}
+.main-footer__contacts-button:hover {
+  outline: 3px solid white;
 }
 .main-footer__contacts:after {
   position: absolute;
@@ -921,7 +962,7 @@ img {
   position: absolute;
   content: "";
   top: 30px;
-  left: 15px;
+  left: 38px;
   width: 27px;
   height: 35px;
   background: url("../img/icon-download-license.png");
@@ -942,7 +983,7 @@ img {
   position: absolute;
   content: "";
   top: 30px;
-  left: 15px;
+  left: 38px;
   width: 27px;
   height: 35px;
   background: url("../img/icon-download-license.png");
@@ -965,7 +1006,7 @@ img {
   position: absolute;
   content: "";
   top: 30px;
-  left: 15px;
+  left: 21px;
   width: 27px;
   height: 35px;
   background: url("../img/icon-download-license.png");
@@ -1026,13 +1067,26 @@ img {
   color: #0798ed;
 }
 .company-contacts__description-phone-callback-button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
   background: none;
-  border: 2px solid #0798ed;
+  border: 1px solid #0798ed;
   border-radius: 24px;
   width: 165px;
   color: #0798ed;
+  transition: all 0.2s ease;
+  /*transition: 1.2s;*/
+}
+.company-contacts__description-phone-callback-button:hover {
+  background: #0698ed;
+  color: white;
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.1);
 }
 .company-contacts__map {
+  background: url("../img/map-loading.jpg");
+  height: 455px;
   display: inline-block;
   vertical-align: top;
   margin-bottom: 60px;
@@ -1093,6 +1147,11 @@ img {
   height: 21px;
   background: url("../img/icon-zoom.png");
 }
+.licensing-documents__item-description-zoom-button:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  /*transition: 1.2s;*/
+}
 .licensing-documents__item-preview-photo {
   display: inline-block;
   width: 132px;
@@ -1100,6 +1159,11 @@ img {
   border: 1px solid #0698ed;
   box-sizing: border-box;
   padding: 5px 3px;
+  transition: all 0.2s ease;
+  /*transition: 1.2s;*/
+}
+.licensing-documents__item-preview-photo:hover {
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.1);
 }
 .licensing-documents__item-button {
   min-height: 90px;
@@ -1225,7 +1289,7 @@ img {
   position: absolute;
   content: "";
   top: 30px;
-  left: 15px;
+  left: 25px;
   width: 27px;
   height: 35px;
   background: url("../img/icon-download-license.png");
@@ -1257,4 +1321,11 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 555px;
+}
+.document-button {
+  transition: all 0.2s ease;
+  /*transition: 1.2s;*/
+}
+.document-button:hover {
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.1);
 }

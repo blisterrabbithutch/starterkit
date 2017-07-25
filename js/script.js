@@ -4,22 +4,37 @@ $(document).ready(function() {
 	var $formClose = $(".js-form-close");
 	$headerButton.click(function() {
 		event.preventDefault();
-		// $headerForm.toggleClass("main-header__form-wrapper--closed");
 		$headerForm.slideToggle();
 	});
 	$formClose.click(function() {
 		event.preventDefault();
-		// $headerForm.toggleClass("main-header__form-wrapper--closed");
 		$headerForm.slideToggle();
 	});
-	$('a[href^="#"]').click(function() {
-        var el = $(this).attr('href');
-        var $headerButtonClose = $(".main-header__form-wrapper--closed");
-        $('body').animate({
-        scrollTop: $(el).offset().top}, 1000);
-        return false; 
-        $headerForm.toggleClass("main-header__form-wrapper--closed");
-	});
+	$('a[href^="#form"]').click(function(){
+    var top = 0;
+    $.when( $('body').animate({scrollTop: top}), 1000).then(function(){ 
+        $headerForm.slideDown(); 
+    });
+  });
 });
 
+
+
+// $('a[href^="#form"]').click(function(){
+// 	var el = $(this).attr('href');
+//     $.when( $(el).animate({scrollTop: $(el).offset().top}), 1000).then(function(){ 
+//          $headerForm.slideToggle(); 
+//     });
+// });
+
+
+// $('a[href^="#form"]').click(function(){ 
+// 	var el = $(this).attr('href');
+//     $("#block").animate(
+//         $('body').animate({
+//         scrollTop: $(el).offset().top}), 1000);
+//         return false; 
+//         $headerForm.slideToggle();
+//     ;
+// });
 

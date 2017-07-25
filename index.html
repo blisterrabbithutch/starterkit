@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header id="form" class="main-header">
 		<div class="main-header__wrapper">
 			<a href="#" class="main-header__logo">
 				<img src="img/logo.png" alt="Логотип" class="main-header__logo-image">
@@ -22,7 +22,7 @@
 				</button><!-- main-header-contacts-callback-button -->
 			</div><!-- main-header-contacts -->
 		</div>
-		<div id="form" class="main-header__form-wrapper main-header__form-wrapper--closed  js-main-header-form">
+		<div class="main-header__form-wrapper main-header__form-wrapper--closed  js-main-header-form">
 			<form action="#" method="post" class="main-header__form">
 				<div class="main-header__form-name-field">
 					<input type="text" placeholder="Ваше имя" id="username" required name="username">
@@ -140,18 +140,18 @@
 						<div class="company-program-quality__item company-program-quality__item--teachers">
 							<p class="company-program-quality__item-title">Преподавательский состав</p>
 							<div class="company-program-quality__item-description">
-								Среди преподавательского 
-								состава – последователи школы 
-								Тимофеева-Ресовского,
+								Среди преподавательского<br> 
+								состава – последователи школы<br> 
+								Тимофеева-Ресовского,<br>
 								вживую слушатели его лекций
 							</div>
 						</div><!-- company-program-quality__item -->
 						<div class="company-program-quality__item company-program-quality__item--program">
 							<p class="company-program-quality__item-title">Основа программы</p>
 							<div class="company-program-quality__item-description">
-								Сейчас накопленный опыт, знания 
-								и требования законодательства по 
-								радиационной безопасности положены 
+								Сейчас накопленный опыт, знания<br> 
+								и требования законодательства по<br> 
+								радиационной безопасности положены<br> 
 								в основу программ Центра
 							</div>
 						</div><!-- company-program-quality__item -->
@@ -171,15 +171,15 @@
 				<div class="main-footer__wrapper">
 					<div class="main-footer__pagination">
 						<ul>
-							<li><a href="#">Сопроводительные документы</a></li>
-							<li><a href="#">Разрешительные документы</a></li>
-							<li><a href="#">Тех. задание на соответствие 44-ФЗ</a></li>
+							<li><a href="accompanying-documents.html">Сопроводительные документы</a></li>
+							<li><a href="licensing-documents/html">Разрешительные документы</a></li>
+							<li><a href="technical-task.html">Тех. задание на соответствие 44-ФЗ</a></li>
 						</ul>
 					</div><!-- main-footer__pagination -->
 					<div class="main-footer__contacts">
 						<div class="main-footer__contacts-title">Контакты</div>
 						<div class="main-footer__contacts-number">+7 (351) 248 38 24</div>
-						<a href="#form" class="main-footer__contacts-button">Заказать звонок</a>
+						<a href="#form" class="main-footer__contacts-button js-callback">Заказать звонок</a>
 					</div><!-- main-footer__contacts -->
 					<div class="main-footer__company-info">
 						<a href="index.html" class="main-footer__company-info-name-title">ЮЖУРАЛРЭСЦЕНТР</a>
