@@ -19,6 +19,11 @@
 		padding-top: 29px;
 		text-decoration: none;
 		color: @black;
+		&:hover {
+			box-shadow: 2px 2px 14px 2px rgba(0,0,0,0.1);
+		}
+
+
 		&--large {
 			p {
 				margin:0px;
@@ -100,4 +105,153 @@
 			}
 		}
 	}
+}
+
+
+
+
+
+@media @mobile-widths-only {
+
+.accompanying-documents {
+	.container();
+	text-align: center;
+	min-height: 830px;
+	padding-top: 40px;
+	h1 {
+		margin-top: 0;
+		margin-bottom: 45px;
+	}
+	&__link {
+		height: auto;
+		width: 300px;
+		font-size: 13px;
+		padding-bottom: 30px;
+		box-shadow: 2px 2px 14px 2px rgba(0,0,0,0.1);
+
+		&:last-child {
+			margin-bottom:65px;
+		}
+
+		&--large {
+			margin-right: 0;
+			padding-left: 85px;
+			padding-right: 30px;
+			p {
+				text-align: left;
+				margin:0px;
+				line-height: 16px;
+			}
+
+			&:after {
+				top: 32px;
+				left: 30px;
+
+			}
+
+		}
+
+		&--medium {
+			margin-right: 0;
+			padding-left: 85px;
+			padding-right: 30px;
+			p {
+				text-align: left;
+				margin:0px;
+				line-height: 16px;
+			}
+
+			&:after {
+				left: 30px;
+			}
+		}
+
+		&--request {
+			padding-top: 39px;
+		}
+		&--small {
+			margin-right: 0;
+			padding-left: 85px;
+			padding-right: 30px;
+			p {
+				text-align: left;
+				margin:0;
+				line-height: 16px;
+			}
+
+			&:after {
+				left: 30px;
+				top: 32px;
+			}
+			&-presser:after {
+				background: url("../img/icon-download-presser.png");
+				width: 23px;
+    			height: 32px;
+			}
+			&-slinger:after {
+				background: url("../img/icon-download-slinger.png");
+				width: 29px;
+    			height: 29px;
+			}
+			&-crane:after {
+				background: url("../img/icon-download-crane.png");
+				width: 25px;
+    			height: 42px;
+			}
+		}
+	}
+}
+
+
+
+}
+
+
+
+
+
+@media @tablet-widths-only {
+
+.accompanying-documents {
+	h1 {
+	}
+	&__link {
+		&:last-child {
+		}
+		&--large {
+			width: 720px;
+			margin-right: 0;
+			p {
+			}
+			&:after {
+			}
+		}
+		&--medium {
+			width: 466px;
+			p {
+			}
+			&:after {
+			}
+		}
+		&--request {
+		}
+		&--small {
+			width: 217px;
+			&:nth-child(7n) {
+				margin-right:0;
+			}
+			&:last-child {
+				margin-right:0;
+			}
+			&-presser {
+				padding-top: 20px;
+			}
+			p {
+			}
+		}
+	}
+}
+
+
+
 }

@@ -12,13 +12,24 @@
 		}
 	}
 
+	&__mobile-menu-button {
+		display: none;
+	}
+
 	ul {
 		margin:0;
-		.container();
+		padding: 0;
+		/*.container();*/
 		text-align: center;
 	}
 
 	li {
+		border-right: 1px solid #d1e6f7;
+		vertical-align: top;
+		&:last-child {
+				border-right:none;
+			}
+			
 		margin-left: -2px;
     	margin-right: -2px;
 		display: inline-block;
@@ -36,4 +47,136 @@
 		background-color: #d1e6f7;
 		box-shadow: inset 0 5px 20px -4px rgba(0,0,0,0.1);
 	}
+}
+
+
+
+
+@media @mobile-widths-only {
+
+	.js-menu-closed {
+		display: none;
+	}
+
+	.js-arrow-down {
+		position: relative;
+		&:after {
+			position:absolute;
+			content: "";
+			background: url("../img/menu-hide.png");
+			transform: rotate(180deg);
+			width: 14px;
+    		height: 11px;
+    		margin: 0 auto;
+    		top: 17px;
+    		right: 0;
+    		left: 55px;
+		}
+	}
+
+	.js-arrow-up {
+		position: relative;
+		&:after {
+			position:absolute;
+			content: "";
+			background: url("../img/menu-hide.png");
+			width: 14px;
+    		height: 11px;
+    		margin: 0 auto;
+    		top: 17px;
+    		right: 0;
+    		left: 55px;
+		}
+	}
+
+	.main-nav {
+		min-height: 43px;
+		background-color: #d1e6f7;
+	a {
+		&:hover {
+		}
+	}
+
+	ul {
+	}
+
+	li {
+		background-color: #e5eef7;
+		width: 100%;
+		a {
+			border-top: 1px solid #d1e6f7;
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+
+	li&__mobile-menu-title {
+		background-color: #d1e6f7;
+	}
+
+	&__mobile-menu-button {
+		display: block;
+		width: 100%;
+		height: 42px;
+		background: none;
+		box-sizing: border-box;
+		padding-top: 4px;
+		border: none;
+		font-size: inherit;
+		font-weight: normal;
+		text-transform: uppercase;
+		position: relative;
+		text-indent: -20px;
+		&:focus {
+			outline:none;
+		}
+	}
+
+	&-link--active {
+		}
+	}
+
+}
+
+
+
+
+
+@media @tablet-widths-only {
+
+	
+
+	.main-nav {
+	ul {
+	}
+
+	li {
+		border-right: 1px solid #d1e6f7;
+		vertical-align: top;
+		&:last-child {
+				border-right:none;
+			}
+		a {
+			line-height: 20px;
+			white-space: pre-line;
+			padding-left: 36px;
+			padding-right: 36px;
+			text-align: left;
+			height: 70px;
+		}
+	}
+
+	li&__mobile-menu-title {
+	}
+
+	&__mobile-menu-button {
+		&:focus {
+		}
+	}
+	&-link--active {
+		}
+	}
+
+
 }

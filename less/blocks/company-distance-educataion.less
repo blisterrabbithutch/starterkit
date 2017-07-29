@@ -6,7 +6,7 @@
 	text-transform: uppercase;
 	min-height: 265px;
 	background-color: lightgray;
-	background: url(../img/title-background.jpg); 
+	background: url(../img/title-background.png); 
 	background-size: cover;
 	h3 {
 		margin:0;
@@ -17,4 +17,42 @@
 		font-weight: lighter;
 		width: 832px;
 	}
+}
+
+@media @mobile-widths-only {
+
+.company-distance-education {
+	min-height: 270px;
+	text-align: center;
+	&__wrapper {
+	}
+	h3 {
+		margin:0;
+		display: inline-block;
+		padding-top: 35px;
+		margin-bottom: 35px;
+		font-size: 16px;
+		line-height: 30px;
+		width: 250px;
+	}
+}
+
+}
+
+
+
+@media @tablet-widths-only {
+
+.company-distance-education {
+	min-height: 270px;
+	text-align: center;
+	&__wrapper {
+	}
+	h3 {
+		width: 600px;
+		font-size: 20px;
+		margin-bottom: 60px;
+	}
+}
+
 }

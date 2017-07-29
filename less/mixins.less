@@ -7,13 +7,23 @@
 }
 /*1170 с учётом padding*/
 .container() {
+    box-sizing: border-box;
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /*@media @mobile-widths {
-        width: 660px;
-    }*/
+    @media @mobile-widths-only {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 320px;
+    }
+    @media @tablet-widths-only {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 760px;
+    }
 }
 .no-outline() {
     outline: none;

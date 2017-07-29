@@ -55,3 +55,81 @@
 		margin-bottom: 60px;
 	}
 }
+
+
+
+@media @mobile-widths-only {
+
+.company-contacts {
+	/*.container();*/
+	padding-left: 0;
+	padding-right: 0;
+	width: auto;
+	text-align: center;
+	h1 {
+		margin-top: 0;
+		text-align: center;
+		span {
+			display: none;
+		}
+	} /* h1 */
+	
+	&__description {
+		margin-right: 0;
+		width: 300px;
+		padding: 0px 35px 0 35px;
+		text-align: center;
+		min-height: 335px;
+
+		p {
+			margin-top:10px;
+		}
+
+		&-adress-title,
+		&-phone-title {
+			margin-top: 40px;
+			margin-bottom: 0;
+		}
+
+
+	}
+
+	&-phone-callback-button {
+		margin-top: 40px;
+			&:hover {
+			}
+		}
+
+
+
+	&__map {
+		width: 100%;
+		iframe {
+			width: 100%;
+		}
+	} /* map */
+} /* comp-contacts */
+
+
+
+} 
+
+
+@media @tablet-widths-only {
+
+.company-contacts {
+	width: auto;
+	padding: 0;
+	text-align: center;
+	&__map {
+		background: none;
+		width: 100%;
+		iframe {
+			width: 100%;
+		}
+	}
+}
+
+
+
+} 

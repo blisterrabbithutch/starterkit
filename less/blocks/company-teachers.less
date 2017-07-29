@@ -6,7 +6,7 @@
 	min-height: 270px;
 	background-color: lightgray;
 	text-transform: uppercase;
-	background: url(../img/title-background.jpg); 
+	background: url(../img/title-background.png); 
 	background-size: cover;
 	h3 {
 		margin:0;
@@ -17,4 +17,39 @@
 		font-weight: lighter;
 		width: 832px;
 	}
+}
+
+
+@media @mobile-widths-only {
+
+.company-teachers {
+	text-align: center;
+	min-height: 350px;
+	&__wrapper {
+	}
+	h3 {
+		margin: 0;
+		padding-top: 45px;
+		display: inline-block;
+		width: 250px;
+		font-size: 16px;
+		line-height: 30px;
+	}
+}
+
+}
+
+
+
+@media @tablet-widths-only {
+
+.company-teachers {
+	&__wrapper {
+	}
+	h3 {
+		font-size: 20px;
+		width: 580px;
+	}
+}
+
 }
