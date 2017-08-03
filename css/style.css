@@ -2282,6 +2282,10 @@ img {
   vertical-align: top;
   display: inline-block;
 }
+.licensing-documents__item-button {
+  text-decoration: none;
+  color: black;
+}
 .licensing-documents__item-description {
   margin-top: 35px;
   margin-left: 25px;
@@ -2323,7 +2327,7 @@ img {
   height: 183px;
   border: 1px solid #0698ed;
   box-sizing: border-box;
-  padding: 5px 3px;
+  padding: 5px 5px;
   transition: all 0.2s ease;
   /*transition: 1.2s;*/
 }
